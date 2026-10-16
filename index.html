@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motel Lua Nova</title>
+
+  <style>
+    /* ===== Base ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2b2b2b;
+      background: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    /* ===== Cabeçalho ===== */
+    header {
+      background: #3b1f3a;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 15px;
+    }
+
+    /* ===== Destaque (topo) ===== */
+    .destaque {
+      background: #5a2a55;
+      color: #ffffff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .destaque h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .destaque p {
+      font-size: 18px;
+    }
+
+    /* ===== Seção das suítes ===== */
+    .suites {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .suites h2 {
+      margin-bottom: 30px;
+    }
+
+    .cartoes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cartao {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cartao h3 {
+      margin-bottom: 10px;
+      color: #5a2a55;
+    }
+
+    .cartao .preco {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .cartao ul {
+      list-style: none;
+      text-align: left;
+      margin: 15px 0;
+    }
+
+    .cartao ul li {
+      margin-bottom: 6px;
+    }
+
+    /* ===== Rodapé ===== */
+    footer {
+      background: #3b1f3a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Motel Lua Nova</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#suites">Suítes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Destaque -->
+  <section class="destaque" id="inicio">
+    <h2>Conforto e privacidade</h2>
+    <p>Suítes modernas para você relaxar.</p>
+  </section>
+
+  <!-- Suítes -->
+  <section class="suites" id="suites">
+    <h2>Nossas suítes</h2>
+
+    <div class="cartoes">
+
+      <!-- Suíte 1 -->
+      <div class="cartao">
+        <h3>Suíte Simples</h3>
+        <p>Ideal para um momento tranquilo.</p>
+        <div class="preco">R$ 90</div>
+        <ul>
+          <li>Cama de casal</li>
+          <li>TV</li>
+          <li>Ar-condicionado</li>
+        </ul>
+      </div>
+
+      <!-- Suíte 2 -->
+      <div class="cartao">
+        <h3>Suíte Premium</h3>
+        <p>Mais espaço e conforto.</p>
+        <div class="preco">R$ 160</div>
+        <ul>
+          <li>Cama king</li>
+          <li>Hidromassagem</li>
+          <li>Frigobar</li>
+        </ul>
+      </div>
+
+      <!-- Suíte 3 -->
+      <div class="cartao">
+        <h3>Suíte Luxo</h3>
+        <p>A experiência mais completa.</p>
+        <div class="preco">R$ 290</div>
+        <ul>
+          <li>Cama king</li>
+          <li>Piscina privativa</li>
+          <li>Sauna</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <p>Contato: (00) 00000-0000</p>
+    <p>&copy; 2026 Motel Lua Nova</p>
+  </footer>
+
+</body>
+</html>
